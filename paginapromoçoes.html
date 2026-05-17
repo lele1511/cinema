@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promoções do Cinema</title>
+    <link rel="stylesheet" href="paginapromoçoes.css">
+</head>
+<body>
+    <header> 
+        <div class="logo">Cinema SALA1</div>
+        <nav>
+            <ul>
+                <li><a href="prova.html" target="janela-inicio">Início</a></li>
+                <li><a href="#">Em Cartaz</a></li>
+                <li><a href="#">Lançamento</a></li>
+                <li><a href="paginapromoçoes.html" target="janela-promo">Promoções</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="btn-menu">Ingresso Online</a>
+        
+    </header>
+
+    <div class="titulo">PROMOÇÕES DO CINEMA</div>
+    
+    <div class="container">
+        <div class="card">
+            <h2>Segunda Paga Meia</h2>
+            <p>Toda segunda-feira todo mundo paga meia entrada!</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="card">
+            <h2>Aniversariante Grátis</h2>
+            <p>No dia do seu aniversário, seu ingresso é gratuito!</p>
+            <button onclick="openForm()">Cadastrar</button>
+        </div>
+
+
+        <div id="form">
+            <div class="card">
+                <span class="close">&times;</span>
+                <h2>Cadastro do Aniversariante</h2>
+                <input type="text" placeholder="Seu Nome">
+                <input type="text" placeholder="Seu CPF">
+                <input type="date" placeholder="Data de Nascimento">
+                <button>Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="promoçoes.js"></script>
+</body>
+</html>

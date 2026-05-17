@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #f5f5f5;
+}
+
+/* TOPO */
+
+header{
+   width: 100%;
+    background: linear-gradient(to right, white);
+    color: #ff6600;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px #ff6600(0, 0, 0, 0.5);
+
+}
+
+.logo{
+    font-size: 32px;
+    font-weight: bold;
+    color: #ff6600;
+    background-color:white;
+}
+
+.titulo{
+    background-color: #ff6600;
+    color: white;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    padding: 20px 500px;
+    font-size: 30px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: 0.3s;
+}
+nav ul li a:hover{
+    color: #ff6600;
+}
+
+.btn-menu{
+    background-color: #ff6600;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* Cards */
+
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 60px;
+    flex-wrap: wrap;
+}
+
+.card{
+    background: white;
+    width: 400px;
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+     
+}
+
+.card:hover{
+    transform: translateY(-8px);
+
+}
+
+.card h2{
+    color: #ff5e00;
+    margin-bottom: 15px;
+    white-space: nowrap;
+}
+
+.card p{
+    color: black;
+    line-height: 1.5;
+    flex-grow: 1;
+    font-size: 18px;
+    padding: 15px;
+}
+
+/*Botões*/
+
+button{
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+button:hover{
+    background: #e65100;
+
+}
+
+.card input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.card button {
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 150px;
+    align-self: center;
+ 
+}
+
+#form {
+    display: none;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#form .card:hover{
+    transform: none;
+}
+
+.close {
+    display: flex;
+    color: #aaaaaa;
+    font-size: 28px;
+    font-weight: bold;
+    justify-content: right;
+    align-items: right;
+    margin-top: -30px;
+    margin-right: -30px;
+}
+
+.close:hover, .close:focus{
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+}
